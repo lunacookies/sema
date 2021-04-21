@@ -1,0 +1,22 @@
+// Do not edit directly; this file is generated.
+{
+	"name": "Sema",
+	"type": "dark",
+	"colors": {
+		"editor.background": "#161616",
+		"editor.foreground": "#CACACA",
+		"foreground": "#CACACA"
+	},
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"comment": {
+			"foreground": "#FFFFFF",
+			"italic": true
+		},
+		"comment.documentation": {
+			"foreground": "#FFFFFF",
+			"fontStyle": ""
+		}
+	},
+	"tokenColors": []
+}

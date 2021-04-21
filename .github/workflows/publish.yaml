@@ -1,0 +1,21 @@
+on:
+  push:
+    tags: [v*]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+
+      - run: npm install
+
+      - name: Publish to marketplace
+        run: npx vsce publish --pat ${{ secrets.VSCE_PAT }}

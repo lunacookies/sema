@@ -1,0 +1,29 @@
+{
+  "name": "sema",
+  "displayName": "Sema",
+  "description": "A cold, clear theme",
+  "publisher": "arzg",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/arzg/sema"
+  },
+  "version": "0.2.15",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "scripts": {
+    "package": "vsce package"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Sema",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Sema-color-theme.json"
+      }
+    ]
+  }
+}

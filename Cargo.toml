@@ -1,0 +1,9 @@
+[package]
+authors = ["Aramis Razzaghipour <aramisnoah@gmail.com>"]
+edition = "2018"
+name = "sema"
+version = "0.1.0"
+
+[dependencies]
+mottle = "0.1.3"
+tincture = "0.5.0"
