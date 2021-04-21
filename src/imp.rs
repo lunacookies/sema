@@ -17,6 +17,12 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
+    builder.add_rule(Semantic("number"), palette.light_magenta());
+    builder.add_rules(
+        &[Semantic("string"), Semantic("characterLiteral")],
+        palette.light_green(),
+    );
+
     builder.add_rule(
         Semantic("comment"),
         (palette.base(BaseScale::BrightFg), FontStyle::Italic),

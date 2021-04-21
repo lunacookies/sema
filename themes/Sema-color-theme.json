@@ -9,6 +9,18 @@
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
+		"number": {
+			"foreground": "#FFB1FE",
+			"fontStyle": ""
+		},
+		"string": {
+			"foreground": "#D6FCB9",
+			"fontStyle": ""
+		},
+		"characterLiteral": {
+			"foreground": "#D6FCB9",
+			"fontStyle": ""
+		},
 		"comment": {
 			"foreground": "#FFFFFF",
 			"italic": true
