@@ -29,6 +29,21 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.yellow(),
     );
 
+    builder.add_rules(
+        &[
+            Semantic("type"),
+            Semantic("class"),
+            Semantic("struct"),
+            Semantic("enum"),
+            Semantic("union"),
+            Semantic("typeAlias"),
+            Semantic("builtinType"),
+            Semantic("typeParameter"),
+        ],
+        palette.light_teal(),
+    );
+    builder.add_rule(Semantic("interface"), palette.teal());
+
     builder.add_rule(Semantic("number"), palette.magenta());
     builder.add_rules(
         &[Semantic("string"), Semantic("characterLiteral")],
