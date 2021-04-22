@@ -21,7 +21,15 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("*.controlFlow"), palette.blue());
 
     builder.add_rules(
-        &[Semantic("function"), Semantic("method")],
+        &[
+            Semantic("function"),
+            Semantic("method"),
+            Semantic("arithmetic"),
+            Semantic("bitwise"),
+            Semantic("logical"),
+            Semantic("comparision"), // https://github.com/rust-analyzer/rust-analyzer/pull/8582
+            Semantic("bracket"),
+        ],
         palette.light_yellow(),
     );
     builder.add_rules(

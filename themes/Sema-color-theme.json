@@ -25,6 +25,26 @@
 			"foreground": "#E1E0C8",
 			"fontStyle": ""
 		},
+		"arithmetic": {
+			"foreground": "#E1E0C8",
+			"fontStyle": ""
+		},
+		"bitwise": {
+			"foreground": "#E1E0C8",
+			"fontStyle": ""
+		},
+		"logical": {
+			"foreground": "#E1E0C8",
+			"fontStyle": ""
+		},
+		"comparision": {
+			"foreground": "#E1E0C8",
+			"fontStyle": ""
+		},
+		"bracket": {
+			"foreground": "#E1E0C8",
+			"fontStyle": ""
+		},
 		"function.trait": {
 			"foreground": "#E4E1AB",
 			"fontStyle": ""
