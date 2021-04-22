@@ -12,14 +12,6 @@ impl Palette {
         oklch(0.95, 0.1, 130.0)
     }
 
-    pub(crate) fn blue(&self) -> Oklch {
-        oklch(0.8, 0.1, 230.0)
-    }
-
-    pub(crate) fn light_blue(&self) -> Oklch {
-        oklch(0.9, 0.05, 240.0)
-    }
-
     pub(crate) fn lavender(&self) -> Oklch {
         oklch(0.93, 0.032, 285.0)
     }
@@ -28,6 +20,29 @@ impl Palette {
         oklch(0.85, 0.13, 330.0)
     }
 }
+
+macro_rules! define_color_method {
+    ($name:ident,$hue:literal) => {
+        impl Palette {
+            pub(crate) fn $name(&self) -> Oklch {
+                oklch(0.8, 0.1, $hue)
+            }
+        }
+    };
+}
+
+macro_rules! define_light_color_method {
+    ($name:ident,$hue:literal) => {
+        impl Palette {
+            pub(crate) fn $name(&self) -> Oklch {
+                oklch(0.9, 0.05, $hue)
+            }
+        }
+    };
+}
+
+define_color_method!(blue, 230.0);
+define_light_color_method!(light_blue, 240.0);
 
 #[derive(Debug, Clone, Copy)]
 pub(crate) enum BaseScale {
