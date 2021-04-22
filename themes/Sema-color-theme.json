@@ -10,7 +10,7 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#CCE1F1",
+			"foreground": "#CDE1F0",
 			"fontStyle": ""
 		},
 		"*.controlFlow": {
@@ -18,31 +18,31 @@
 			"fontStyle": ""
 		},
 		"function": {
-			"foreground": "#E1E0C8",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"method": {
-			"foreground": "#E1E0C8",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"arithmetic": {
-			"foreground": "#E1E0C8",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"bitwise": {
-			"foreground": "#E1E0C8",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"logical": {
-			"foreground": "#E1E0C8",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"comparision": {
-			"foreground": "#E1E0C8",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"bracket": {
-			"foreground": "#E1E0C8",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"function.trait": {
@@ -54,31 +54,31 @@
 			"fontStyle": ""
 		},
 		"type": {
-			"foreground": "#CAE5DB",
+			"foreground": "#CCE5DB",
 			"fontStyle": ""
 		},
 		"class": {
-			"foreground": "#CAE5DB",
+			"foreground": "#CCE5DB",
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#CAE5DB",
+			"foreground": "#CCE5DB",
 			"fontStyle": ""
 		},
 		"enum": {
-			"foreground": "#CAE5DB",
+			"foreground": "#CCE5DB",
 			"fontStyle": ""
 		},
 		"union": {
-			"foreground": "#CAE5DB",
+			"foreground": "#CCE5DB",
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#CAE5DB",
+			"foreground": "#CCE5DB",
 			"fontStyle": ""
 		},
 		"builtinType": {
-			"foreground": "#CAE5DB",
+			"foreground": "#CCE5DB",
 			"fontStyle": ""
 		},
 		"typeParameter": {
@@ -106,11 +106,11 @@
 			"fontStyle": ""
 		},
 		"property": {
-			"foreground": "#DBDCF3",
+			"foreground": "#DBDCF2",
 			"fontStyle": ""
 		},
 		"enumMember": {
-			"foreground": "#DBDCF3",
+			"foreground": "#DBDCF2",
 			"fontStyle": ""
 		},
 		"comment": {

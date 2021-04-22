@@ -10,7 +10,7 @@ impl Palette {
 
     const LOW_LIGHTNESS: f32 = 0.8;
     const HIGH_LIGHTNESS: f32 = 0.9;
-    const LOW_CHROMA: f32 = 0.032;
+    const LOW_CHROMA: f32 = 0.03;
     const MEDIUM_CHROMA: f32 = 0.07;
     const HIGH_CHROMA: f32 = 0.1;
 
