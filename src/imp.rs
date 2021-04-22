@@ -17,10 +17,18 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
-    builder.add_rule(Semantic("number"), palette.light_magenta());
+    builder.add_rule(Semantic("keyword"), palette.blue());
+    builder.add_rule(Semantic("*.controlFlow"), palette.cyan());
+
+    builder.add_rule(Semantic("number"), palette.magenta());
     builder.add_rules(
         &[Semantic("string"), Semantic("characterLiteral")],
-        palette.light_green(),
+        palette.green(),
+    );
+
+    builder.add_rules(
+        &[Semantic("property"), Semantic("enumMember")],
+        palette.lavender(),
     );
 
     builder.add_rule(

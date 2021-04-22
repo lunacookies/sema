@@ -9,16 +9,32 @@
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
+		"keyword": {
+			"foreground": "#C1E3FC",
+			"fontStyle": ""
+		},
+		"*.controlFlow": {
+			"foreground": "#75CAF2",
+			"fontStyle": ""
+		},
 		"number": {
-			"foreground": "#FFB1FE",
+			"foreground": "#FEAEF6",
 			"fontStyle": ""
 		},
 		"string": {
-			"foreground": "#D6FCB9",
+			"foreground": "#D8FDB5",
 			"fontStyle": ""
 		},
 		"characterLiteral": {
-			"foreground": "#D6FCB9",
+			"foreground": "#D8FDB5",
+			"fontStyle": ""
+		},
+		"property": {
+			"foreground": "#E5E5FD",
+			"fontStyle": ""
+		},
+		"enumMember": {
+			"foreground": "#E5E5FD",
 			"fontStyle": ""
 		},
 		"comment": {
