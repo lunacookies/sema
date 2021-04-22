@@ -26,11 +26,11 @@
 			"fontStyle": ""
 		},
 		"function.trait": {
-			"foreground": "#E8E293",
+			"foreground": "#E5E2A4",
 			"fontStyle": ""
 		},
 		"method.trait": {
-			"foreground": "#E8E293",
+			"foreground": "#E5E2A4",
 			"fontStyle": ""
 		},
 		"type": {
