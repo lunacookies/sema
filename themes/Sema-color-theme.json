@@ -10,111 +10,111 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#CDE1F0",
+			"foreground": "#BDD1E0",
 			"fontStyle": ""
 		},
 		"*.controlFlow": {
-			"foreground": "#75CAF2",
+			"foreground": "#65BAE1",
 			"fontStyle": ""
 		},
 		"function": {
-			"foreground": "#E1E0C9",
+			"foreground": "#D0CFB9",
 			"fontStyle": ""
 		},
 		"method": {
-			"foreground": "#E1E0C9",
+			"foreground": "#D0CFB9",
 			"fontStyle": ""
 		},
 		"arithmetic": {
-			"foreground": "#E1E0C9",
+			"foreground": "#D0CFB9",
 			"fontStyle": ""
 		},
 		"bitwise": {
-			"foreground": "#E1E0C9",
+			"foreground": "#D0CFB9",
 			"fontStyle": ""
 		},
 		"logical": {
-			"foreground": "#E1E0C9",
+			"foreground": "#D0CFB9",
 			"fontStyle": ""
 		},
 		"comparision": {
-			"foreground": "#E1E0C9",
+			"foreground": "#D0CFB9",
 			"fontStyle": ""
 		},
 		"bracket": {
-			"foreground": "#E1E0C9",
+			"foreground": "#D0CFB9",
 			"fontStyle": ""
 		},
 		"function.trait": {
-			"foreground": "#E4E1AB",
+			"foreground": "#D4D19C",
 			"fontStyle": ""
 		},
 		"method.trait": {
-			"foreground": "#E4E1AB",
+			"foreground": "#D4D19C",
 			"fontStyle": ""
 		},
 		"type": {
-			"foreground": "#CCE5DB",
+			"foreground": "#BBD4CB",
 			"fontStyle": ""
 		},
 		"class": {
-			"foreground": "#CCE5DB",
+			"foreground": "#BBD4CB",
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#CCE5DB",
+			"foreground": "#BBD4CB",
 			"fontStyle": ""
 		},
 		"enum": {
-			"foreground": "#CCE5DB",
+			"foreground": "#BBD4CB",
 			"fontStyle": ""
 		},
 		"union": {
-			"foreground": "#CCE5DB",
+			"foreground": "#BBD4CB",
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#CCE5DB",
+			"foreground": "#BBD4CB",
 			"fontStyle": ""
 		},
 		"builtinType": {
-			"foreground": "#CCE5DB",
+			"foreground": "#BBD4CB",
 			"fontStyle": ""
 		},
 		"typeParameter": {
-			"foreground": "#97F4D4",
+			"foreground": "#87E3C4",
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#97F4D4",
+			"foreground": "#87E3C4",
 			"fontStyle": ""
 		},
 		"typeAlias.trait": {
-			"foreground": "#90CDB7",
+			"foreground": "#80BDA7",
 			"fontStyle": ""
 		},
 		"number": {
-			"foreground": "#E3A6DC",
+			"foreground": "#D297CC",
 			"fontStyle": ""
 		},
 		"string": {
-			"foreground": "#C8ECA5",
+			"foreground": "#B8DB95",
 			"fontStyle": ""
 		},
 		"characterLiteral": {
-			"foreground": "#C8ECA5",
+			"foreground": "#B8DB95",
 			"fontStyle": ""
 		},
 		"property": {
-			"foreground": "#DBDCF2",
+			"foreground": "#CBCBE1",
 			"fontStyle": ""
 		},
 		"enumMember": {
-			"foreground": "#DBDCF2",
+			"foreground": "#CBCBE1",
 			"fontStyle": ""
 		},
 		"lifetime": {
-			"foreground": "#75CAF2",
+			"foreground": "#65BAE1",
 			"fontStyle": ""
 		},
 		"comment": {
