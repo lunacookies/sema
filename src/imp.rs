@@ -42,7 +42,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         ],
         palette.light_teal(),
     );
-    builder.add_rule(Semantic("interface"), palette.teal());
+    builder.add_rules(&[Semantic("interface")], palette.teal());
+    builder.add_rules(&[Semantic("typeAlias.trait")], palette.medium_teal());
 
     builder.add_rule(Semantic("number"), palette.magenta());
     builder.add_rules(

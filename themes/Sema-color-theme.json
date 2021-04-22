@@ -26,11 +26,11 @@
 			"fontStyle": ""
 		},
 		"function.trait": {
-			"foreground": "#E5E2A4",
+			"foreground": "#E4E1AB",
 			"fontStyle": ""
 		},
 		"method.trait": {
-			"foreground": "#E5E2A4",
+			"foreground": "#E4E1AB",
 			"fontStyle": ""
 		},
 		"type": {
@@ -67,6 +67,10 @@
 		},
 		"interface": {
 			"foreground": "#97F4D4",
+			"fontStyle": ""
+		},
+		"typeAlias.trait": {
+			"foreground": "#90CDB7",
 			"fontStyle": ""
 		},
 		"number": {
