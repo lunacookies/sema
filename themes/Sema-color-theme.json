@@ -10,7 +10,7 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#C1E3FC",
+			"foreground": "#C7E2F6",
 			"fontStyle": ""
 		},
 		"*.controlFlow": {
@@ -18,23 +18,23 @@
 			"fontStyle": ""
 		},
 		"number": {
-			"foreground": "#FEAEF6",
+			"foreground": "#E3A6DC",
 			"fontStyle": ""
 		},
 		"string": {
-			"foreground": "#D8FDB5",
+			"foreground": "#C8ECA5",
 			"fontStyle": ""
 		},
 		"characterLiteral": {
-			"foreground": "#D8FDB5",
+			"foreground": "#C8ECA5",
 			"fontStyle": ""
 		},
 		"property": {
-			"foreground": "#E5E5FD",
+			"foreground": "#DBDBF8",
 			"fontStyle": ""
 		},
 		"enumMember": {
-			"foreground": "#E5E5FD",
+			"foreground": "#DBDBF8",
 			"fontStyle": ""
 		},
 		"comment": {
