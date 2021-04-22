@@ -1,42 +1,30 @@
 use super::{oklch, Palette};
 use tincture::Oklch;
 
-macro_rules! define_color_method {
-    ($name:ident,$ty:expr,$hue:literal) => {
-        impl Palette {
-            pub(crate) fn $name(&self) -> Oklch {
-                oklch($ty.lightness(), $ty.chroma(), $hue)
-            }
-        }
-    };
-}
+const LOW_LIGHTNESS: f32 = 0.8;
+const HIGH_LIGHTNESS: f32 = 0.9;
 
-define_color_method!(green, ColorType::Strong, 130.0);
-define_color_method!(blue, ColorType::Regular, 230.0);
-define_color_method!(light_blue, ColorType::Light, 240.0);
-define_color_method!(lavender, ColorType::Light, 285.0);
-define_color_method!(magenta, ColorType::Regular, 330.0);
+const LOW_CHROMA: f32 = 0.04;
+const HIGH_CHROMA: f32 = 0.1;
 
-enum ColorType {
-    Regular,
-    Light,
-    Strong,
-}
-
-impl ColorType {
-    fn lightness(self) -> f32 {
-        match self {
-            Self::Regular => 0.8,
-            Self::Light => 0.9,
-            Self::Strong => 0.9,
-        }
+impl Palette {
+    pub(crate) fn green(&self) -> Oklch {
+        oklch(HIGH_LIGHTNESS, HIGH_CHROMA, 130.0)
     }
 
-    fn chroma(self) -> f32 {
-        match self {
-            Self::Regular => 0.1,
-            Self::Light => 0.04,
-            Self::Strong => 0.1,
-        }
+    pub(crate) fn blue(&self) -> Oklch {
+        oklch(LOW_LIGHTNESS, HIGH_CHROMA, 230.0)
+    }
+
+    pub(crate) fn light_blue(&self) -> Oklch {
+        oklch(HIGH_LIGHTNESS, LOW_CHROMA, 240.0)
+    }
+
+    pub(crate) fn lavender(&self) -> Oklch {
+        oklch(HIGH_LIGHTNESS, LOW_CHROMA, 285.0)
+    }
+
+    pub(crate) fn magenta(&self) -> Oklch {
+        oklch(LOW_LIGHTNESS, HIGH_CHROMA, 330.0)
     }
 }
