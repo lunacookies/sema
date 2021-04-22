@@ -22,6 +22,10 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rules(
         &[Semantic("function"), Semantic("method")],
+        palette.light_yellow(),
+    );
+    builder.add_rules(
+        &[Semantic("function.trait"), Semantic("method.trait")],
         palette.yellow(),
     );
 

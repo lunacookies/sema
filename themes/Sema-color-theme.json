@@ -25,6 +25,14 @@
 			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
+		"function.trait": {
+			"foreground": "#E8E293",
+			"fontStyle": ""
+		},
+		"method.trait": {
+			"foreground": "#E8E293",
+			"fontStyle": ""
+		},
 		"number": {
 			"foreground": "#E3A6DC",
 			"fontStyle": ""
