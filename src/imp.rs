@@ -20,6 +20,11 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("keyword"), palette.light_blue());
     builder.add_rule(Semantic("*.controlFlow"), palette.blue());
 
+    builder.add_rules(
+        &[Semantic("function"), Semantic("method")],
+        palette.yellow(),
+    );
+
     builder.add_rule(Semantic("number"), palette.magenta());
     builder.add_rules(
         &[Semantic("string"), Semantic("characterLiteral")],

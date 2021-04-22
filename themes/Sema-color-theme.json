@@ -17,6 +17,14 @@
 			"foreground": "#75CAF2",
 			"fontStyle": ""
 		},
+		"function": {
+			"foreground": "#E1E0C2",
+			"fontStyle": ""
+		},
+		"method": {
+			"foreground": "#E1E0C2",
+			"fontStyle": ""
+		},
 		"number": {
 			"foreground": "#E3A6DC",
 			"fontStyle": ""
