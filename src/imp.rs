@@ -76,4 +76,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         Semantic("comment.documentation"),
         palette.base(BaseScale::BrightFg),
     );
+
+    builder.add_rule(Semantic("*.mutable"), FontStyle::Underline);
 }

@@ -120,6 +120,9 @@
 		"comment.documentation": {
 			"foreground": "#FFFFFF",
 			"fontStyle": ""
+		},
+		"*.mutable": {
+			"underline": true
 		}
 	},
 	"tokenColors": []
