@@ -15,6 +15,16 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::Fg),
     );
 
+    builder.add_workspace_rule(
+        "editor.lineHighlightBackground",
+        palette.base(BaseScale::LightBg),
+    );
+
+    builder.add_workspace_rule(
+        "editor.selectionBackground",
+        palette.base(BaseScale::LighterBg),
+    );
+
     builder.add_workspace_rules(
         &["activityBar.background", "sideBar.background"],
         palette.base(BaseScale::Bg),
