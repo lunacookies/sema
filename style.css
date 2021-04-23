@@ -96,6 +96,11 @@ aside {
   color: #7c7c7c;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 pre {
   overflow: auto;
 }
