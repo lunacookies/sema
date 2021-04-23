@@ -1,46 +1,122 @@
 *,
 ::before,
 ::after {
+  background-repeat: no-repeat;
   box-sizing: border-box;
+  color: inherit;
   font: inherit;
   margin: 0;
   padding: 0;
+  text-decoration: inherit;
+}
+
+html {
+  font-size: 19px;
 }
 
 body {
   font-family: input-sans;
   font-weight: 300;
-  letter-spacing: -0.1em;
-  word-spacing: -0.3em;
-  line-height: 1.4;
+  letter-spacing: -0.03em;
+  word-spacing: -0.2em;
+  line-height: 1.8;
   font-feature-settings: "ss02", "ss11", "ss12";
 
-  max-width: 50rem;
+  max-width: 40rem;
   margin: 0 auto;
+  padding: 1rem;
 
   background-color: #0f0f0f;
   color: #d6d6d6;
 }
 
+p,
+ul {
+  max-width: 30rem;
+}
+
 * + * {
-  margin-top: 5rem;
+  margin-top: 1rem;
+}
+
+li + li {
+  margin-top: 0;
+}
+
+h1,
+h2,
+pre {
+  line-height: 1.4;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 100;
   text-align: center;
 }
 
 h2 {
-  font-size: 2rem;
+  font-family: input-sans-condensed;
+  font-size: 1.5rem;
   font-weight: 200;
-  text-align: center;
+  margin-top: 5rem;
+}
+
+a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-size: 100% 1px;
 }
 
 code {
+  font-family: input-sans-narrow;
   letter-spacing: 0;
   word-spacing: 0;
+}
+
+p code {
+  border: 1px solid #5e5e5e;
+  border-radius: 0.3rem;
+  padding: 0 0.2rem;
+}
+
+code.sema kw {
+  color: #cde1f0;
+}
+
+code.sema cf {
+  color: #75caf2;
+}
+
+code.sema prop,
+code.sema enum {
+  color: #dbdcf2;
+}
+
+code.sema ty {
+  color: #e1e0c9;
+}
+
+code.sema in {
+  color: #75caf2;
+}
+
+code.sema bool {
+  color: #e3a6dc;
+}
+
+code.sema n {
+  color: #e3a6dc;
+}
+
+code.sema str {
+  color: #c8eca5;
+}
+
+code.sema .mut {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-size: 100% 1px;
 }
 
 code.colorful kw {
@@ -60,9 +136,17 @@ code.colorful enum {
 }
 
 code.colorful ty {
-  color: #e1e0c9;
+  color: #e3a6dc;
 }
 
 code.colorful bool {
-  color: #e3a6dc;
+  color: #e1e0c9;
+}
+
+code.colorful n {
+  color: #e1e0c9;
+}
+
+code.colorful str {
+  color: #dbdcf2;
 }

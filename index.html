@@ -11,12 +11,103 @@
     <h1>sema</h1>
 
     <h2>When we write code, we do it in colour.</h2>
-    <pre><code class="colorful"><kw>fn</kw> <fn>under_threshold</fn>(&<kw>self</kw>) -> <ty>bool</ty> {
+    <pre><code class="colorful"><kw>fn</kw> <fn>under_threshold</fn>(<kw>self</kw>) -> <ty>bool</ty> {
     <kw>if let</kw> <enum>Some</enum>(reset_threshold) = <kw>self</kw>.<prop>config</prop>.<fn>reset_threshold</fn>() {
         <kw>self</kw>.<prop>terminal</prop>.<fn>portion_covered</fn>() < reset_threshold
     } <kw>else</kw> {
         <bool>true</bool>
     }
 }</code></pre>
+
+    <h2>You already do the kind of highlighting shown here in your head.</h2>
+
+    <p>
+      To read code in the first place, you make sense of the syntax as you go.
+    </p>
+
+    <p>
+      Just by looking you can tell that <code>if</code> is a keyword, that
+      <code>do_thing()</code> is a function call and that <code>100</code> is a
+      number – no highlighting required.
+    </p>
+
+    <h2>
+      Let’s spend the ‘colour budget’ on important things instead of the easy
+      stuff we do automatically anyway.
+    </h2>
+
+    <p>
+      We can only stand so many different bright colours in our code before it
+      becomes an overwhelming rainbow. Let’s give colour to those elements of
+      code that are particularly confusing and lead to bugs easily.
+    </p>
+
+    <p>
+      This is a debatable topic, but I would argue that there are a few clear
+      contenders:
+    </p>
+
+    <ul>
+      <li>control flow – easy to make mistakes with</li>
+      <li>interfaces/traits – ‘where did this method come from?’</li>
+      <li>
+        magic numbers and strings – their purpose is often unclear and so
+        deserve more attention
+      </li>
+      <li>
+        mutation – ‘why is this variable’s value not what I expected it to be?’
+      </li>
+    </ul>
+
+    <p>Here’s some code that has all four – try to spot them.</p>
+
+    <pre><code class="colorful"><kw>fn</kw> <fn>do_thing</fn>() {
+    <kw>var</kw> api = <ty>JsonApi</ty>.<fn>connect</fn>();
+
+    <kw>loop</kw> {
+        <kw>if</kw> api.<fn>read_value</fn>() == <n>294</n> {
+            <fn>print</fn>(<str>"Success!"</str>);
+            <str>"127.0.0.1:8080"</str>.<fn>make_current_socket</fn>(api);
+        }
+
+        <fn>print</fn>(api.<prop>connected_socket</prop>);
+    }
+}</code></pre>
+
+    <h2>
+      What would code would look like if we emphasised the difficult parts?
+    </h2>
+
+    <pre><code class="sema"><kw>fn</kw> <fn>do_thing</fn>() {
+      <kw >var</kw> <var class="mut">api</var> = <ty>JsonApi</ty>.<fn>connect</fn>();
+
+      <cf>loop</cf> {
+        <cf>if</cf> <var class="mut">api</var>.<fn>read_value</fn>() == <n>294</n> {
+            <fn>print</fn>(<str>"Success!"</str>);
+            <str>"127.0.0.1:8080"</str>.<in class="mut">make_current_socket</in>(<var class="mut">api</var>);
+        }
+
+        <fn>print</fn>(<var class="mut">api</var>.<prop>connected_socket</prop>);
+    }
+}</code></pre>
+
+    <p>
+      How did the <code>make_current_socket</code> method appear on the string
+      literal? It came from an interface, which is now obvious due to the bright
+      colour. The magic numbers and strings stand out more, as does control
+      flow.
+    </p>
+
+    <p>
+      <code>make_current_socket</code> modifies its arguments, which would’ve
+      surprised us with the old theme when we tried to print the API’s connected
+      socket. With this theme, the underline lets us know beforehand.
+      <code>api</code>’s underline shows that it can be mutated, an additional
+      reminder.
+    </p>
+
+    <h2>
+      <a href="https://github.com/arzg/sema">Try the sema theme today.</a>
+    </h2>
   </body>
 </html>
