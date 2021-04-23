@@ -7,7 +7,7 @@ use std::io;
 fn main() -> io::Result<()> {
     let palette = palette::Palette;
 
-    let mut builder = ThemeBuilder::new("Sema".to_string(), Type::Dark);
+    let mut builder = ThemeBuilder::new("sema".to_string(), Type::Dark);
     imp::add_rules(&mut builder, &palette);
     builder.build().save()?;
 
