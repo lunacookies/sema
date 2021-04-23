@@ -35,3 +35,32 @@ h2 {
   font-size: 2rem;
   text-align: center;
 }
+
+code {
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+
+code.colorful kw {
+  color: #75caf2;
+}
+
+code.colorful fn {
+  color: #c8eca5;
+}
+
+code.colorful prop {
+  color: #f7a597;
+}
+
+code.colorful enum {
+  color: #dbdcf2;
+}
+
+code.colorful ty {
+  color: #e1e0c9;
+}
+
+code.colorful bool {
+  color: #e3a6dc;
+}

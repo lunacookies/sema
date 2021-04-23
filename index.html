@@ -9,6 +9,14 @@
   </head>
   <body>
     <h1>sema</h1>
+
     <h2>When we write code, we do it in colour.</h2>
+    <pre><code class="colorful"><kw>fn</kw> <fn>under_threshold</fn>(&<kw>self</kw>) -> <ty>bool</ty> {
+    <kw>if let</kw> <enum>Some</enum>(reset_threshold) = <kw>self</kw>.<prop>config</prop>.<fn>reset_threshold</fn>() {
+        <kw>self</kw>.<prop>terminal</prop>.<fn>portion_covered</fn>() < reset_threshold
+    } <kw>else</kw> {
+        <bool>true</bool>
+    }
+}</code></pre>
   </body>
 </html>
