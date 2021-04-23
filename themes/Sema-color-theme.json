@@ -3,10 +3,10 @@
 	"name": "Sema",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#000000",
-		"editor.foreground": "#CECECD",
-		"foreground": "#CECECD",
-		"rust_analyzer.inlayHints.foreground": "#636363"
+		"editor.background": "#0F0F0F",
+		"editor.foreground": "#D6D6D6",
+		"foreground": "#D6D6D6",
+		"rust_analyzer.inlayHints.foreground": "#7C7C7C"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
@@ -127,19 +127,19 @@
 			"fontStyle": ""
 		},
 		"attribute": {
-			"foreground": "#9E9E9E",
+			"foreground": "#AEAEAE",
 			"fontStyle": ""
 		},
 		"function.attribute": {
-			"foreground": "#9E9E9E",
+			"foreground": "#AEAEAE",
 			"fontStyle": ""
 		},
 		"punctuation.attribute": {
-			"foreground": "#9E9E9E",
+			"foreground": "#AEAEAE",
 			"fontStyle": ""
 		},
 		"operator.attribute": {
-			"foreground": "#9E9E9E",
+			"foreground": "#AEAEAE",
 			"fontStyle": ""
 		},
 		"*.unsafe": {

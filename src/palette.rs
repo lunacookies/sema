@@ -67,7 +67,7 @@ impl BaseScale {
     }
 
     fn lightness(self) -> f32 {
-        lerp(self.value(), 0.0..1.0)
+        lerp(self.value(), 0.17..1.0)
     }
 }
 
