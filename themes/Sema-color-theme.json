@@ -142,6 +142,10 @@
 			"foreground": "#808080",
 			"fontStyle": ""
 		},
+		"*.unsafe": {
+			"foreground": "#F7A597",
+			"fontStyle": ""
+		},
 		"*.mutable": {
 			"italic": true
 		}
