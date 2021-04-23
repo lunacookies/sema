@@ -88,7 +88,8 @@ a {
   background-size: 100% 1px;
 }
 
-aside {
+aside,
+figcaption {
   font-family: input-sans-compressed;
   font-size: 0.8rem;
   font-style: italic;
