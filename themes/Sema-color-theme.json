@@ -11,7 +11,7 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#C7E2F6",
+			"foreground": "#CDE1F0",
 			"fontStyle": ""
 		},
 		"*.controlFlow": {
@@ -27,31 +27,31 @@
 			"fontStyle": ""
 		},
 		"type": {
-			"foreground": "#E1E0C2",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"class": {
-			"foreground": "#E1E0C2",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#E1E0C2",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"enum": {
-			"foreground": "#E1E0C2",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"union": {
-			"foreground": "#E1E0C2",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#E1E0C2",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"builtinType": {
-			"foreground": "#E1E0C2",
+			"foreground": "#E1E0C9",
 			"fontStyle": ""
 		},
 		"interface": {
@@ -67,11 +67,11 @@
 			"fontStyle": ""
 		},
 		"variable.constant": {
-			"foreground": "#F6D4DD",
+			"foreground": "#F0D6DD",
 			"fontStyle": ""
 		},
 		"variable.static": {
-			"foreground": "#F6D4DD",
+			"foreground": "#F0D6DD",
 			"fontStyle": ""
 		},
 		"variable.constant.trait": {
@@ -91,15 +91,15 @@
 			"fontStyle": ""
 		},
 		"property": {
-			"foreground": "#DBDBF8",
+			"foreground": "#DBDCF2",
 			"fontStyle": ""
 		},
 		"enumMember": {
-			"foreground": "#DBDBF8",
+			"foreground": "#DBDCF2",
 			"fontStyle": ""
 		},
 		"parameter": {
-			"foreground": "#DBDBF8",
+			"foreground": "#DBDCF2",
 			"fontStyle": ""
 		},
 		"macro": {
@@ -107,11 +107,11 @@
 			"fontStyle": ""
 		},
 		"formatSpecifier": {
-			"foreground": "#DBDBF8",
+			"foreground": "#DBDCF2",
 			"fontStyle": ""
 		},
 		"escapeSequence": {
-			"foreground": "#DBDBF8",
+			"foreground": "#DBDCF2",
 			"fontStyle": ""
 		},
 		"lifetime": {
