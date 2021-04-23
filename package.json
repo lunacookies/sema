@@ -1,13 +1,13 @@
 {
   "name": "sema",
   "displayName": "Sema",
-  "description": "A cold, clear theme",
+  "description": "A theme that focuses on what’s important",
   "publisher": "arzg",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/arzg/sema"
   },
-  "version": "0.2.15",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.41.0"
   },
