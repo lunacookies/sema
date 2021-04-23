@@ -14,6 +14,12 @@ html {
   font-size: 19px;
 }
 
+@media (max-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 body {
   font-family: input-sans;
   font-weight: 300;
@@ -28,6 +34,12 @@ body {
 
   background-color: #0f0f0f;
   color: #d6d6d6;
+}
+
+@media (max-width: 40rem) {
+  body {
+    font-family: input-sans-narrow;
+  }
 }
 
 p,
