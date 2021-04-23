@@ -107,11 +107,11 @@
 			"fontStyle": ""
 		},
 		"string": {
-			"foreground": "#C8ECA5",
+			"foreground": "#CFE8B7",
 			"fontStyle": ""
 		},
 		"characterLiteral": {
-			"foreground": "#C8ECA5",
+			"foreground": "#CFE8B7",
 			"fontStyle": ""
 		},
 		"property": {
@@ -127,7 +127,7 @@
 			"fontStyle": ""
 		},
 		"macro": {
-			"foreground": "#C8ECA5",
+			"foreground": "#CFE8B7",
 			"fontStyle": ""
 		},
 		"formatSpecifier": {
