@@ -18,6 +18,12 @@ body {
 }
 
 h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+h2 {
   font-size: 2rem;
   text-align: center;
 }
