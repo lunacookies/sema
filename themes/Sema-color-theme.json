@@ -138,6 +138,10 @@
 			"foreground": "#808080",
 			"fontStyle": ""
 		},
+		"operator.attribute": {
+			"foreground": "#808080",
+			"fontStyle": ""
+		},
 		"*.mutable": {
 			"italic": true
 		}

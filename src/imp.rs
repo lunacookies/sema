@@ -93,6 +93,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("attribute"),
             Semantic("function.attribute"),
             Semantic("punctuation.attribute"),
+            Semantic("operator.attribute"),
         ],
         palette.base(BaseScale::DimFg),
     );
