@@ -99,6 +99,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 
     builder.add_rule(Semantic("*.unsafe"), palette.red());
-    builder.add_rule(Semantic("*.mutable"), FontStyle::Italic);
-    builder.add_rule(Semantic("*.consuming"), FontStyle::Underline);
+    builder.add_rule(Semantic("*.mutable"), FontStyle::Underline);
+    builder.add_rule(Semantic("*.consuming"), FontStyle::Italic);
 }

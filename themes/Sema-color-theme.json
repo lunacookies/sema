@@ -147,10 +147,10 @@
 			"fontStyle": ""
 		},
 		"*.mutable": {
-			"italic": true
+			"underline": true
 		},
 		"*.consuming": {
-			"underline": true
+			"italic": true
 		}
 	},
 	"tokenColors": []
