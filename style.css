@@ -68,6 +68,16 @@ a {
   background-size: 100% 1px;
 }
 
+aside {
+  font-family: input-sans-compressed;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-feature-settings: "ss01", "ss02", "ss11", "ss12";
+  letter-spacing: 0;
+  word-spacing: 0;
+  color: #7c7c7c;
+}
+
 code {
   font-family: input-sans-narrow;
   letter-spacing: 0;
