@@ -20,6 +20,11 @@ html {
   }
 }
 
+html {
+  background-color: #0f0f0f;
+  color: #d6d6d6;
+}
+
 body {
   font-family: input-sans;
   font-weight: 300;
@@ -31,9 +36,6 @@ body {
   max-width: 40rem;
   margin: 0 auto;
   padding: 1rem;
-
-  background-color: #0f0f0f;
-  color: #d6d6d6;
 }
 
 @media (max-width: 40rem) {
