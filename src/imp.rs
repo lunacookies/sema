@@ -43,14 +43,19 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.yellow(),
     );
     builder.add_rules(
-        &[Semantic("interface"), Semantic("typeParameter")],
+        &[
+            Semantic("interface"),
+            Semantic("typeAlias.trait"),
+            Semantic("typeParameter"),
+        ],
         palette.blue(),
     );
 
     builder.add_rules(
-        &[Semantic("*.constant"), Semantic("variable.static")],
+        &[Semantic("variable.constant"), Semantic("variable.static")],
         palette.yellow(),
     );
+    builder.add_rule(Semantic("variable.constant.trait"), palette.blue());
 
     builder.add_rule(Semantic("number"), palette.magenta());
     builder.add_rules(

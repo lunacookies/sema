@@ -58,16 +58,24 @@
 			"foreground": "#75CAF2",
 			"fontStyle": ""
 		},
+		"typeAlias.trait": {
+			"foreground": "#75CAF2",
+			"fontStyle": ""
+		},
 		"typeParameter": {
 			"foreground": "#75CAF2",
 			"fontStyle": ""
 		},
-		"*.constant": {
+		"variable.constant": {
 			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
 		"variable.static": {
 			"foreground": "#E1E0C2",
+			"fontStyle": ""
+		},
+		"variable.constant.trait": {
+			"foreground": "#75CAF2",
 			"fontStyle": ""
 		},
 		"number": {
