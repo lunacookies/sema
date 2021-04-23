@@ -84,6 +84,10 @@ aside {
   color: #7c7c7c;
 }
 
+pre {
+  overflow: auto;
+}
+
 code {
   font-family: input-sans-narrow;
   letter-spacing: 0;
