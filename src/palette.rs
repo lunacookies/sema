@@ -10,7 +10,7 @@ impl Palette {
 
     const LOW_LIGHTNESS: f32 = 0.8;
     const HIGH_LIGHTNESS: f32 = 0.9;
-    const LOW_CHROMA: f32 = 0.03;
+    const LOW_CHROMA: f32 = 0.032;
     const HIGH_CHROMA: f32 = 0.1;
 
     pub(crate) fn pink(&self) -> Oklch {
