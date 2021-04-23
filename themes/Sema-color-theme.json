@@ -18,12 +18,12 @@
 			"foreground": "#75CAF2",
 			"fontStyle": ""
 		},
-		"function.declaration": {
-			"foreground": "#E1E0C2",
+		"function.trait": {
+			"foreground": "#75CAF2",
 			"fontStyle": ""
 		},
-		"method.declaration": {
-			"foreground": "#E1E0C2",
+		"method.trait": {
+			"foreground": "#75CAF2",
 			"fontStyle": ""
 		},
 		"type": {
@@ -55,11 +55,11 @@
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#E1E0C2",
+			"foreground": "#75CAF2",
 			"fontStyle": ""
 		},
 		"typeParameter": {
-			"foreground": "#E1E0C2",
+			"foreground": "#75CAF2",
 			"fontStyle": ""
 		},
 		"*.constant": {

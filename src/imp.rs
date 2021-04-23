@@ -26,11 +26,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("*.controlFlow"), palette.blue());
 
     builder.add_rules(
-        &[
-            Semantic("function.declaration"),
-            Semantic("method.declaration"),
-        ],
-        palette.yellow(),
+        &[Semantic("function.trait"), Semantic("method.trait")],
+        palette.blue(),
     );
 
     builder.add_rules(
@@ -42,10 +39,12 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("union"),
             Semantic("typeAlias"),
             Semantic("builtinType"),
-            Semantic("interface"),
-            Semantic("typeParameter"),
         ],
         palette.yellow(),
+    );
+    builder.add_rules(
+        &[Semantic("interface"), Semantic("typeParameter")],
+        palette.blue(),
     );
 
     builder.add_rules(
