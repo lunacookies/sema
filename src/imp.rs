@@ -27,18 +27,9 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rules(
         &[
-            Semantic("function"),
-            Semantic("method"),
-            Semantic("arithmetic"),
-            Semantic("bitwise"),
-            Semantic("logical"),
-            Semantic("comparision"), // https://github.com/rust-analyzer/rust-analyzer/pull/8582
-            Semantic("bracket"),
+            Semantic("function.declaration"),
+            Semantic("method.declaration"),
         ],
-        palette.light_yellow(),
-    );
-    builder.add_rules(
-        &[Semantic("function.trait"), Semantic("method.trait")],
         palette.yellow(),
     );
 
@@ -51,15 +42,16 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("union"),
             Semantic("typeAlias"),
             Semantic("builtinType"),
+            Semantic("interface"),
             Semantic("typeParameter"),
         ],
-        palette.light_teal(),
+        palette.yellow(),
     );
+
     builder.add_rules(
-        &[Semantic("interface"), Semantic("typeParameter")],
-        palette.teal(),
+        &[Semantic("*.constant"), Semantic("variable.static")],
+        palette.yellow(),
     );
-    builder.add_rules(&[Semantic("typeAlias.trait")], palette.medium_teal());
 
     builder.add_rule(Semantic("number"), palette.magenta());
     builder.add_rules(
@@ -67,10 +59,11 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.green(),
     );
 
-    builder.add_rules(
-        &[Semantic("property"), Semantic("enumMember")],
-        palette.lavender(),
-    );
+    builder.add_rule(Semantic("property"), palette.lavender());
+
+    builder.add_rule(Semantic("enumMember"), palette.lavender());
+
+    builder.add_rule(Semantic("parameter"), palette.lavender());
 
     builder.add_rule(Semantic("lifetime"), palette.blue());
 
@@ -84,5 +77,5 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::BrightFg),
     );
 
-    builder.add_rule(Semantic("*.mutable"), FontStyle::Underline);
+    builder.add_rule(Semantic("*.mutable"), FontStyle::Italic);
 }

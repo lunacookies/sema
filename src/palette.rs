@@ -8,34 +8,17 @@ impl Palette {
         oklch(scale.lightness(), 0.0, 0.0)
     }
 
-    const LOW_LIGHTNESS: f32 = 0.75;
-    const HIGH_LIGHTNESS: f32 = 0.85;
-    const LOW_CHROMA: f32 = 0.03;
-    const MEDIUM_CHROMA: f32 = 0.07;
+    const LOW_LIGHTNESS: f32 = 0.8;
+    const HIGH_LIGHTNESS: f32 = 0.9;
+    const LOW_CHROMA: f32 = 0.04;
     const HIGH_CHROMA: f32 = 0.1;
 
     pub(crate) fn yellow(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::MEDIUM_CHROMA, 105.0)
-    }
-
-    pub(crate) fn light_yellow(&self) -> Oklch {
         oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 105.0)
     }
 
     pub(crate) fn green(&self) -> Oklch {
         oklch(Self::HIGH_LIGHTNESS, Self::HIGH_CHROMA, 130.0)
-    }
-
-    pub(crate) fn teal(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::HIGH_CHROMA, 170.0)
-    }
-
-    pub(crate) fn medium_teal(&self) -> Oklch {
-        oklch(Self::LOW_LIGHTNESS, Self::MEDIUM_CHROMA, 170.0)
-    }
-
-    pub(crate) fn light_teal(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 170.0)
     }
 
     pub(crate) fn blue(&self) -> Oklch {
@@ -67,14 +50,14 @@ impl BaseScale {
     fn value(self) -> f32 {
         match self {
             Self::Bg => 0.0,
-            Self::DarkFg => 0.3,
-            Self::Fg => 0.8,
+            Self::DarkFg => 0.4,
+            Self::Fg => 0.85,
             Self::BrightFg => 1.0,
         }
     }
 
     fn lightness(self) -> f32 {
-        lerp(self.value(), 0.2..1.0)
+        lerp(self.value(), 0.0..1.0)
     }
 }
 

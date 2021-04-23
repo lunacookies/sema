@@ -3,119 +3,99 @@
 	"name": "Sema",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#161616",
-		"editor.foreground": "#CACACA",
-		"foreground": "#CACACA",
-		"rust_analyzer.inlayHints.foreground": "#525252"
+		"editor.background": "#000000",
+		"editor.foreground": "#CECECD",
+		"foreground": "#CECECD",
+		"rust_analyzer.inlayHints.foreground": "#484848"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#BDD1E0",
+			"foreground": "#C7E2F6",
 			"fontStyle": ""
 		},
 		"*.controlFlow": {
-			"foreground": "#65BAE1",
+			"foreground": "#75CAF2",
 			"fontStyle": ""
 		},
-		"function": {
-			"foreground": "#D0CFB9",
+		"function.declaration": {
+			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
-		"method": {
-			"foreground": "#D0CFB9",
-			"fontStyle": ""
-		},
-		"arithmetic": {
-			"foreground": "#D0CFB9",
-			"fontStyle": ""
-		},
-		"bitwise": {
-			"foreground": "#D0CFB9",
-			"fontStyle": ""
-		},
-		"logical": {
-			"foreground": "#D0CFB9",
-			"fontStyle": ""
-		},
-		"comparision": {
-			"foreground": "#D0CFB9",
-			"fontStyle": ""
-		},
-		"bracket": {
-			"foreground": "#D0CFB9",
-			"fontStyle": ""
-		},
-		"function.trait": {
-			"foreground": "#D4D19C",
-			"fontStyle": ""
-		},
-		"method.trait": {
-			"foreground": "#D4D19C",
+		"method.declaration": {
+			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
 		"type": {
-			"foreground": "#BBD4CB",
+			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
 		"class": {
-			"foreground": "#BBD4CB",
+			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#BBD4CB",
+			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
 		"enum": {
-			"foreground": "#BBD4CB",
+			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
 		"union": {
-			"foreground": "#BBD4CB",
+			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#BBD4CB",
+			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
 		"builtinType": {
-			"foreground": "#BBD4CB",
-			"fontStyle": ""
-		},
-		"typeParameter": {
-			"foreground": "#87E3C4",
+			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#87E3C4",
+			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
-		"typeAlias.trait": {
-			"foreground": "#80BDA7",
+		"typeParameter": {
+			"foreground": "#E1E0C2",
+			"fontStyle": ""
+		},
+		"*.constant": {
+			"foreground": "#E1E0C2",
+			"fontStyle": ""
+		},
+		"variable.static": {
+			"foreground": "#E1E0C2",
 			"fontStyle": ""
 		},
 		"number": {
-			"foreground": "#D297CC",
+			"foreground": "#E3A6DC",
 			"fontStyle": ""
 		},
 		"string": {
-			"foreground": "#B8DB95",
+			"foreground": "#C8ECA5",
 			"fontStyle": ""
 		},
 		"characterLiteral": {
-			"foreground": "#B8DB95",
+			"foreground": "#C8ECA5",
 			"fontStyle": ""
 		},
 		"property": {
-			"foreground": "#CBCBE1",
+			"foreground": "#DBDBF8",
 			"fontStyle": ""
 		},
 		"enumMember": {
-			"foreground": "#CBCBE1",
+			"foreground": "#DBDBF8",
+			"fontStyle": ""
+		},
+		"parameter": {
+			"foreground": "#DBDBF8",
 			"fontStyle": ""
 		},
 		"lifetime": {
-			"foreground": "#65BAE1",
+			"foreground": "#75CAF2",
 			"fontStyle": ""
 		},
 		"comment": {
@@ -127,7 +107,7 @@
 			"fontStyle": ""
 		},
 		"*.mutable": {
-			"underline": true
+			"italic": true
 		}
 	},
 	"tokenColors": []
