@@ -14,6 +14,9 @@ body {
   word-spacing: -0.3em;
   line-height: 1.4;
 
+  max-width: 50rem;
+  margin: 0 auto;
+
   background-color: #0f0f0f;
   color: #d6d6d6;
 }
