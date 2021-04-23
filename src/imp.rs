@@ -88,5 +88,14 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::BrightFg),
     );
 
+    builder.add_rules(
+        &[
+            Semantic("attribute"),
+            Semantic("function.attribute"),
+            Semantic("punctuation.attribute"),
+        ],
+        palette.base(BaseScale::DimFg),
+    );
+
     builder.add_rule(Semantic("*.mutable"), FontStyle::Italic);
 }

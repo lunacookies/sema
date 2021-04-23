@@ -126,6 +126,18 @@
 			"foreground": "#FFFFFF",
 			"fontStyle": ""
 		},
+		"attribute": {
+			"foreground": "#808080",
+			"fontStyle": ""
+		},
+		"function.attribute": {
+			"foreground": "#808080",
+			"fontStyle": ""
+		},
+		"punctuation.attribute": {
+			"foreground": "#808080",
+			"fontStyle": ""
+		},
 		"*.mutable": {
 			"italic": true
 		}
