@@ -94,6 +94,14 @@
 			"foreground": "#DBDBF8",
 			"fontStyle": ""
 		},
+		"formatSpecifier": {
+			"foreground": "#DBDBF8",
+			"fontStyle": ""
+		},
+		"escapeSequence": {
+			"foreground": "#DBDBF8",
+			"fontStyle": ""
+		},
 		"lifetime": {
 			"foreground": "#75CAF2",
 			"fontStyle": ""

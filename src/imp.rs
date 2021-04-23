@@ -65,6 +65,11 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Semantic("parameter"), palette.lavender());
 
+    builder.add_rules(
+        &[Semantic("formatSpecifier"), Semantic("escapeSequence")],
+        palette.lavender(),
+    );
+
     builder.add_rule(Semantic("lifetime"), palette.blue());
 
     builder.add_rule(
