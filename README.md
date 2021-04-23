@@ -1,7 +1,15 @@
 # sema: a theme that focuses on what’s important
 
-<table><tbody align="center"><tr><td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema.png"/></td>
-<td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema%20chroma.png"/></td></tr></tbody></table>
+<table><tbody align="center">
+    <tr>
+        <td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema.png"/></td>
+        <td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema%20chroma.png"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema%20soft.png"/></td>
+        <td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema%20soft%20chroma.png"/></td>
+    </tr>
+</tbody></table>
 
 - [On the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=arzg.sema)
 - [On the Open VSX Registry](https://open-vsx.org/extension/arzg/sema)
