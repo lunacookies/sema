@@ -23,6 +23,11 @@
         "label": "sema",
         "uiTheme": "vs-dark",
         "path": "./themes/sema-color-theme.json"
+      },
+      {
+        "label": "sema chroma",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sema chroma-color-theme.json"
       }
     ]
   }

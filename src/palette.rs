@@ -22,6 +22,16 @@ impl Default for Palette {
 }
 
 impl Palette {
+    pub(crate) fn chroma() -> Self {
+        Self {
+            low_chroma: 0.06,
+            medium_chroma: 0.09,
+            high_chroma: 0.11,
+            high_lightness: 0.86, // allows pushing chroma a little higher
+            ..Default::default()
+        }
+    }
+
     pub(crate) fn base(&self, scale: BaseScale) -> Oklch {
         oklch(scale.lightness(), 0.0, 0.0)
     }
