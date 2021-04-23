@@ -5,10 +5,13 @@ use mottle::theme::{ThemeBuilder, Type};
 use std::io;
 
 fn main() -> io::Result<()> {
-    let palette = palette::Palette;
+    build_theme(&palette::Palette::default(), "sema")?;
+    Ok(())
+}
 
-    let mut builder = ThemeBuilder::new("sema".to_string(), Type::Dark);
-    imp::add_rules(&mut builder, &palette);
+fn build_theme(palette: &palette::Palette, name: &str) -> io::Result<()> {
+    let mut builder = ThemeBuilder::new(name.to_string(), Type::Dark);
+    imp::add_rules(&mut builder, palette);
     builder.build().save()?;
 
     Ok(())

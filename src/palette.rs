@@ -1,53 +1,65 @@
 use std::ops::Range;
 use tincture::{Hue, Oklch};
 
-pub(crate) struct Palette;
+pub(crate) struct Palette {
+    low_lightness: f32,
+    high_lightness: f32,
+    low_chroma: f32,
+    medium_chroma: f32,
+    high_chroma: f32,
+}
+
+impl Default for Palette {
+    fn default() -> Self {
+        Self {
+            low_lightness: 0.8,
+            high_lightness: 0.9,
+            low_chroma: 0.032,
+            medium_chroma: 0.07,
+            high_chroma: 0.1,
+        }
+    }
+}
 
 impl Palette {
     pub(crate) fn base(&self, scale: BaseScale) -> Oklch {
         oklch(scale.lightness(), 0.0, 0.0)
     }
 
-    const LOW_LIGHTNESS: f32 = 0.8;
-    const HIGH_LIGHTNESS: f32 = 0.9;
-    const LOW_CHROMA: f32 = 0.032;
-    const MEDIUM_CHROMA: f32 = 0.07;
-    const HIGH_CHROMA: f32 = 0.1;
-
     pub(crate) fn pink(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 0.0)
+        oklch(self.high_lightness, self.low_chroma, 0.0)
     }
 
     pub(crate) fn red(&self) -> Oklch {
-        oklch(Self::LOW_LIGHTNESS, Self::HIGH_CHROMA, 30.0)
+        oklch(self.low_lightness, self.high_chroma, 30.0)
     }
 
     pub(crate) fn yellow(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 105.0)
+        oklch(self.high_lightness, self.low_chroma, 105.0)
     }
 
     pub(crate) fn green(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::MEDIUM_CHROMA, 130.0)
+        oklch(self.high_lightness, self.medium_chroma, 130.0)
     }
 
     pub(crate) fn light_green(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 130.0)
+        oklch(self.high_lightness, self.low_chroma, 130.0)
     }
 
     pub(crate) fn blue(&self) -> Oklch {
-        oklch(Self::LOW_LIGHTNESS, Self::HIGH_CHROMA, 230.0)
+        oklch(self.low_lightness, self.high_chroma, 230.0)
     }
 
     pub(crate) fn light_blue(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 240.0)
+        oklch(self.high_lightness, self.low_chroma, 240.0)
     }
 
     pub(crate) fn lavender(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 285.0)
+        oklch(self.high_lightness, self.low_chroma, 285.0)
     }
 
     pub(crate) fn magenta(&self) -> Oklch {
-        oklch(Self::LOW_LIGHTNESS, Self::HIGH_CHROMA, 330.0)
+        oklch(self.low_lightness, self.high_chroma, 330.0)
     }
 }
 
