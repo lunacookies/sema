@@ -9,14 +9,14 @@
 		"activityBar.background": "#0F0F0F",
 		"sideBar.background": "#0F0F0F",
 		"activityBar.foreground": "#FFFFFF",
-		"activityBar.inactiveForeground": "#7C7C7C",
-		"statusBar.foreground": "#7C7C7C",
+		"activityBar.inactiveForeground": "#585858",
+		"statusBar.foreground": "#585858",
 		"statusBar.background": "#0F0F0F",
 		"statusBar.debuggingBackground": "#0F0F0F",
 		"statusBar.noFolderBackground": "#0F0F0F",
-		"editorLineNumber.foreground": "#7C7C7C",
+		"editorLineNumber.foreground": "#585858",
 		"editorLineNumber.activeForeground": "#FFFFFF",
-		"rust_analyzer.inlayHints.foreground": "#7C7C7C"
+		"rust_analyzer.inlayHints.foreground": "#949494"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
@@ -137,19 +137,19 @@
 			"fontStyle": ""
 		},
 		"attribute": {
-			"foreground": "#AEAEAE",
+			"foreground": "#949494",
 			"fontStyle": ""
 		},
 		"function.attribute": {
-			"foreground": "#AEAEAE",
+			"foreground": "#949494",
 			"fontStyle": ""
 		},
 		"punctuation.attribute": {
-			"foreground": "#AEAEAE",
+			"foreground": "#949494",
 			"fontStyle": ""
 		},
 		"operator.attribute": {
-			"foreground": "#AEAEAE",
+			"foreground": "#949494",
 			"fontStyle": ""
 		},
 		"*.unsafe": {

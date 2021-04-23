@@ -46,7 +46,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_workspace_rule(
         "rust_analyzer.inlayHints.foreground",
-        palette.base(BaseScale::DarkFg),
+        palette.base(BaseScale::DimFg),
     );
 }
 
