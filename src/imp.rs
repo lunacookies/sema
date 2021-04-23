@@ -135,7 +135,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Semantic("parameter"), palette.lavender());
 
-    builder.add_rule(Semantic("macro"), palette.green());
+    builder.add_rule(Semantic("macro"), palette.light_green());
 
     builder.add_rules(
         &[Semantic("formatSpecifier"), Semantic("escapeSequence")],

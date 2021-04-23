@@ -30,6 +30,10 @@ impl Palette {
         oklch(Self::HIGH_LIGHTNESS, Self::MEDIUM_CHROMA, 130.0)
     }
 
+    pub(crate) fn light_green(&self) -> Oklch {
+        oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 130.0)
+    }
+
     pub(crate) fn blue(&self) -> Oklch {
         oklch(Self::LOW_LIGHTNESS, Self::HIGH_CHROMA, 230.0)
     }
