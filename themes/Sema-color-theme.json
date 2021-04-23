@@ -102,6 +102,10 @@
 			"foreground": "#DBDBF8",
 			"fontStyle": ""
 		},
+		"macro": {
+			"foreground": "#C8ECA5",
+			"fontStyle": ""
+		},
 		"formatSpecifier": {
 			"foreground": "#DBDBF8",
 			"fontStyle": ""
