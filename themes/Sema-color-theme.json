@@ -148,6 +148,9 @@
 		},
 		"*.mutable": {
 			"italic": true
+		},
+		"*.consuming": {
+			"underline": true
 		}
 	},
 	"tokenColors": []
