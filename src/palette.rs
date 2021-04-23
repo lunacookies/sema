@@ -2,6 +2,7 @@ use std::ops::Range;
 use tincture::{Hue, Oklch};
 
 pub(crate) struct Palette {
+    base_lightness_range: Range<f32>,
     low_lightness: f32,
     high_lightness: f32,
     low_chroma: f32,
@@ -12,6 +13,7 @@ pub(crate) struct Palette {
 impl Default for Palette {
     fn default() -> Self {
         Self {
+            base_lightness_range: 0.17..1.0,
             low_lightness: 0.8,
             high_lightness: 0.9,
             low_chroma: 0.032,
@@ -32,8 +34,26 @@ impl Palette {
         }
     }
 
+    pub(crate) fn soft() -> Self {
+        Self {
+            base_lightness_range: 0.25..0.95,
+            ..Default::default()
+        }
+    }
+
+    pub(crate) fn soft_chroma() -> Self {
+        Self {
+            base_lightness_range: 0.25..0.95,
+            ..Self::chroma()
+        }
+    }
+
     pub(crate) fn base(&self, scale: BaseScale) -> Oklch {
-        oklch(scale.lightness(), 0.0, 0.0)
+        oklch(
+            lerp(scale.value(), self.base_lightness_range.clone()),
+            0.0,
+            0.0,
+        )
     }
 
     pub(crate) fn pink(&self) -> Oklch {
@@ -95,10 +115,6 @@ impl BaseScale {
             Self::Fg => 0.85,
             Self::BrightFg => 1.0,
         }
-    }
-
-    fn lightness(self) -> f32 {
-        lerp(self.value(), 0.17..1.0)
     }
 }
 

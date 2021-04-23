@@ -28,6 +28,16 @@
         "label": "sema chroma",
         "uiTheme": "vs-dark",
         "path": "./themes/sema chroma-color-theme.json"
+      },
+      {
+        "label": "sema soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sema soft-color-theme.json"
+      },
+      {
+        "label": "sema soft chroma",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sema soft chroma-color-theme.json"
       }
     ]
   }

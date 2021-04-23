@@ -7,6 +7,8 @@ use std::io;
 fn main() -> io::Result<()> {
     build_theme(&palette::Palette::default(), "sema")?;
     build_theme(&palette::Palette::chroma(), "sema chroma")?;
+    build_theme(&palette::Palette::soft(), "sema soft")?;
+    build_theme(&palette::Palette::soft_chroma(), "sema soft chroma")?;
 
     Ok(())
 }
