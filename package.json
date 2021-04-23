@@ -38,6 +38,26 @@
         "label": "sema soft chroma",
         "uiTheme": "vs-dark",
         "path": "./themes/sema soft chroma-color-theme.json"
+      },
+      {
+        "label": "sema light",
+        "uiTheme": "vs",
+        "path": "./themes/sema light-color-theme.json"
+      },
+      {
+        "label": "sema light chroma",
+        "uiTheme": "vs",
+        "path": "./themes/sema light chroma-color-theme.json"
+      },
+      {
+        "label": "sema light soft",
+        "uiTheme": "vs",
+        "path": "./themes/sema light soft-color-theme.json"
+      },
+      {
+        "label": "sema light soft chroma",
+        "uiTheme": "vs",
+        "path": "./themes/sema light soft chroma-color-theme.json"
       }
     ]
   }

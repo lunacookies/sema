@@ -48,6 +48,40 @@ impl Palette {
         }
     }
 
+    pub(crate) fn light() -> Self {
+        Self {
+            base_lightness_range: 1.0..0.2,
+            low_lightness: 0.65,
+            high_lightness: 0.55,
+            low_chroma: 0.04,
+            medium_chroma: 0.06,
+            high_chroma: 0.08,
+        }
+    }
+
+    pub(crate) fn light_chroma() -> Self {
+        Self {
+            low_chroma: 0.09,
+            medium_chroma: 0.1,
+            high_chroma: 0.12,
+            ..Self::light()
+        }
+    }
+
+    pub(crate) fn light_soft() -> Self {
+        Self {
+            base_lightness_range: 0.96..0.3,
+            ..Self::light()
+        }
+    }
+
+    pub(crate) fn light_soft_chroma() -> Self {
+        Self {
+            base_lightness_range: 0.96..0.3,
+            ..Self::light_chroma()
+        }
+    }
+
     pub(crate) fn base(&self, scale: BaseScale) -> Oklch {
         oklch(
             lerp(scale.value(), self.base_lightness_range.clone()),
