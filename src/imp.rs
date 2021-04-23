@@ -265,9 +265,23 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Semantic("unresolvedReference"), palette.red());
 
-    builder.add_rule(Textmate("markup.deleted.diff"), palette.red());
-    builder.add_rule(Textmate("markup.inserted.diff"), palette.green());
+    builder.add_rule(Textmate("markup.deleted"), palette.red());
+    builder.add_rule(Textmate("markup.inserted"), palette.green());
+    builder.add_rule(Textmate("markup.changed"), palette.blue());
     builder.add_rule(Textmate("meta.diff"), palette.base(BaseScale::DarkFg));
+
+    builder.add_rule(
+        Textmate("comment.line.number-sign.git-commit"),
+        palette.base(BaseScale::DimFg),
+    );
+    builder.add_rule(
+        Textmate("invalid.deprecated.line-too-long.git-commit"),
+        palette.pink(),
+    );
+    builder.add_rule(
+        Textmate("invalid.illegal.line-too-long.git-commit"),
+        palette.red(),
+    );
 
     builder.add_rules(
         &[

@@ -546,16 +546,23 @@
 			}
 		},
 		{
-			"scope": "markup.deleted.diff",
+			"scope": "markup.deleted",
 			"settings": {
 				"foreground": "#F7A597",
 				"fontStyle": ""
 			}
 		},
 		{
-			"scope": "markup.inserted.diff",
+			"scope": "markup.inserted",
 			"settings": {
 				"foreground": "#CFE8B7",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "markup.changed",
+			"settings": {
+				"foreground": "#75CAF2",
 				"fontStyle": ""
 			}
 		},
@@ -563,6 +570,27 @@
 			"scope": "meta.diff",
 			"settings": {
 				"foreground": "#585858",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "comment.line.number-sign.git-commit",
+			"settings": {
+				"foreground": "#949494",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "invalid.deprecated.line-too-long.git-commit",
+			"settings": {
+				"foreground": "#F1D6DD",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "invalid.illegal.line-too-long.git-commit",
+			"settings": {
+				"foreground": "#F7A597",
 				"fontStyle": ""
 			}
 		},
