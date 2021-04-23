@@ -67,11 +67,11 @@
 			"fontStyle": ""
 		},
 		"variable.constant": {
-			"foreground": "#E1E0C2",
+			"foreground": "#F6D4DD",
 			"fontStyle": ""
 		},
 		"variable.static": {
-			"foreground": "#E1E0C2",
+			"foreground": "#F6D4DD",
 			"fontStyle": ""
 		},
 		"variable.constant.trait": {

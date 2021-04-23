@@ -53,7 +53,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rules(
         &[Semantic("variable.constant"), Semantic("variable.static")],
-        palette.yellow(),
+        palette.pink(),
     );
     builder.add_rule(Semantic("variable.constant.trait"), palette.blue());
 
