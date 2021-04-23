@@ -9,6 +9,14 @@
         <td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema%20soft.png"/></td>
         <td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema%20soft%20chroma.png"/></td>
     </tr>
+    <tr>
+        <td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema%20light.png"/></td>
+        <td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema%20light%20chroma.png"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema%20light%20soft.png"/></td>
+        <td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema%20light%20soft%20chroma.png"/></td>
+    </tr>
 </tbody></table>
 
 - [On the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=arzg.sema)
