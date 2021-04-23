@@ -178,6 +178,18 @@
 			"foreground": "#F7A597",
 			"fontStyle": ""
 		},
+		"magit-ref-name": {
+			"foreground": "#E1E0C8",
+			"fontStyle": ""
+		},
+		"magit-remote-ref-name": {
+			"foreground": "#E1E0C8",
+			"fontStyle": ""
+		},
+		"magit-tag-name": {
+			"foreground": "#E3A6DC",
+			"fontStyle": ""
+		},
 		"*.unsafe": {
 			"foreground": "#F7A597",
 			"fontStyle": ""
@@ -530,6 +542,48 @@
 			"scope": "keyword.operator",
 			"settings": {
 				"foreground": "#D6D6D6",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "markup.deleted.diff",
+			"settings": {
+				"foreground": "#F7A597",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "markup.inserted.diff",
+			"settings": {
+				"foreground": "#CFE8B7",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "meta.diff",
+			"settings": {
+				"foreground": "#585858",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "magit.entity",
+			"settings": {
+				"foreground": "#CFE8B7",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "magit.header",
+			"settings": {
+				"foreground": "#CCE1F1",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "magit.subheader",
+			"settings": {
+				"foreground": "#75CAF2",
 				"fontStyle": ""
 			}
 		}

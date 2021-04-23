@@ -265,6 +265,22 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Semantic("unresolvedReference"), palette.red());
 
+    builder.add_rule(Textmate("markup.deleted.diff"), palette.red());
+    builder.add_rule(Textmate("markup.inserted.diff"), palette.green());
+    builder.add_rule(Textmate("meta.diff"), palette.base(BaseScale::DarkFg));
+
+    builder.add_rules(
+        &[
+            Semantic("magit-ref-name"),
+            Semantic("magit-remote-ref-name"),
+        ],
+        palette.yellow(),
+    );
+    builder.add_rule(Semantic("magit-tag-name"), palette.magenta());
+    builder.add_rule(Textmate("magit.entity"), palette.green());
+    builder.add_rule(Textmate("magit.header"), palette.light_blue());
+    builder.add_rule(Textmate("magit.subheader"), palette.blue());
+
     builder.add_rule(Semantic("*.unsafe"), palette.red());
     builder.add_rule(Semantic("*.mutable"), FontStyle::Underline);
     builder.add_rule(Semantic("*.consuming"), FontStyle::Italic);
