@@ -20,9 +20,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Sema",
+        "label": "sema",
         "uiTheme": "vs-dark",
-        "path": "./themes/Sema-color-theme.json"
+        "path": "./themes/sema-color-theme.json"
       }
     ]
   }
