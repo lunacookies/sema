@@ -50,9 +50,15 @@ pre {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 100;
-  text-align: center;
+  letter-spacing: -0.08em;
+  word-spacing: -50%;
+  max-width: 35rem;
+}
+
+h1 .project-name {
+  font-weight: 400;
 }
 
 h2 {
