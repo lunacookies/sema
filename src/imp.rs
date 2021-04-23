@@ -26,6 +26,15 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 
     builder.add_workspace_rules(
+        &["editorCursor.foreground", "terminalCursor.foreground"],
+        palette.base(BaseScale::BrightFg),
+    );
+    builder.add_workspace_rules(
+        &["editorCursor.background", "terminalCursor.background"],
+        palette.base(BaseScale::Bg),
+    );
+
+    builder.add_workspace_rules(
         &["activityBar.background", "sideBar.background"],
         palette.base(BaseScale::Bg),
     );
