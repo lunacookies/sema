@@ -1,6 +1,7 @@
 # sema: a theme that focuses on what’s important
 
-![](https://raw.githubusercontent.com/arzg/resources/master/sema.png)
+<table><tbody align="center"><tr><td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema.png"/></td>
+<td><img src="https://raw.githubusercontent.com/arzg/resources/master/sema%20chroma.png"/></td></tr></tbody></table>
 
 - [VS Code extension](https://marketplace.visualstudio.com/items?itemName=arzg.sema)
 - Take a look at [the website](https://arzg.github.io/sema) for information on the rationale behind this theme
