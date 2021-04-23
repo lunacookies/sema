@@ -118,7 +118,7 @@ p code {
 }
 
 code.sema kw {
-  color: #cde1f0;
+  color: #cce1f1;
 }
 
 code.sema cf {
@@ -127,11 +127,11 @@ code.sema cf {
 
 code.sema prop,
 code.sema enum {
-  color: #dbdcf2;
+  color: #dbdcf3;
 }
 
 code.sema ty {
-  color: #e1e0c9;
+  color: #e1e0c8;
 }
 
 code.sema in {
@@ -147,7 +147,7 @@ code.sema n {
 }
 
 code.sema str {
-  color: #c8eca5;
+  color: #cfe8b7;
 }
 
 code.sema .mut {
@@ -161,7 +161,7 @@ code.colorful kw {
 }
 
 code.colorful fn {
-  color: #c8eca5;
+  color: #cfe8b7;
 }
 
 code.colorful prop {
@@ -169,7 +169,7 @@ code.colorful prop {
 }
 
 code.colorful enum {
-  color: #dbdcf2;
+  color: #dbdcf3;
 }
 
 code.colorful ty {
@@ -177,13 +177,13 @@ code.colorful ty {
 }
 
 code.colorful bool {
-  color: #e1e0c9;
+  color: #e1e0c8;
 }
 
 code.colorful n {
-  color: #e1e0c9;
+  color: #e1e0c8;
 }
 
 code.colorful str {
-  color: #dbdcf2;
+  color: #dbdcf3;
 }
