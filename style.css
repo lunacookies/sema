@@ -13,6 +13,7 @@ body {
   letter-spacing: -0.1em;
   word-spacing: -0.3em;
   line-height: 1.4;
+  font-feature-settings: "ss02", "ss11", "ss12";
 
   max-width: 50rem;
   margin: 0 auto;
