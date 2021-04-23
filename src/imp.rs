@@ -15,6 +15,35 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::Fg),
     );
 
+    builder.add_workspace_rules(
+        &["activityBar.background", "sideBar.background"],
+        palette.base(BaseScale::Bg),
+    );
+    builder.add_workspace_rule("activityBar.foreground", palette.base(BaseScale::BrightFg));
+    builder.add_workspace_rule(
+        "activityBar.inactiveForeground",
+        palette.base(BaseScale::DarkFg),
+    );
+
+    builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::DarkFg));
+    builder.add_workspace_rules(
+        &[
+            "statusBar.background",
+            "statusBar.debuggingBackground",
+            "statusBar.noFolderBackground",
+        ],
+        palette.base(BaseScale::Bg),
+    );
+
+    builder.add_workspace_rule(
+        "editorLineNumber.foreground",
+        palette.base(BaseScale::DarkFg),
+    );
+    builder.add_workspace_rule(
+        "editorLineNumber.activeForeground",
+        palette.base(BaseScale::BrightFg),
+    );
+
     builder.add_workspace_rule(
         "rust_analyzer.inlayHints.foreground",
         palette.base(BaseScale::DarkFg),
