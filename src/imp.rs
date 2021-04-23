@@ -54,6 +54,33 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::BrightFg),
     );
 
+    builder.add_workspace_rule("editorWidget.background", palette.base(BaseScale::LightBg));
+
+    builder.add_workspace_rule(
+        "list.highlightForeground",
+        palette.base(BaseScale::BrightFg),
+    );
+    builder.add_workspace_rules(
+        &["list.focusBackground", "list.activeSelectionBackground"],
+        palette.base(BaseScale::LighterBg),
+    );
+
+    builder.add_workspace_rules(
+        &["editorGroupHeader.tabsBackground", "tab.inactiveBackground"],
+        palette.base(BaseScale::Bg),
+    );
+    builder.add_workspace_rule("tab.activeBackground", palette.base(BaseScale::LightBg));
+    builder.add_workspace_rule("tab.inactiveForeground", palette.base(BaseScale::DimFg));
+    builder.add_workspace_rule("tab.activeForeground", palette.base(BaseScale::BrightFg));
+
+    builder.add_workspace_rule("breadcrumb.foreground", palette.base(BaseScale::DimFg));
+    builder.add_workspace_rule(
+        "breadcrumb.focusForeground",
+        palette.base(BaseScale::BrightFg),
+    );
+
+    builder.add_workspace_rule("focusBorder", palette.base(BaseScale::DarkFg));
+
     builder.add_workspace_rule(
         "rust_analyzer.inlayHints.foreground",
         palette.base(BaseScale::DimFg),
