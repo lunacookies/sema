@@ -173,6 +173,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::DimFg),
     );
 
+    builder.add_rule(Semantic("unresolvedReference"), palette.red());
+
     builder.add_rule(Semantic("*.unsafe"), palette.red());
     builder.add_rule(Semantic("*.mutable"), FontStyle::Underline);
     builder.add_rule(Semantic("*.consuming"), FontStyle::Italic);

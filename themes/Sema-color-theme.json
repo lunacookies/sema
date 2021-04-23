@@ -170,6 +170,10 @@
 			"foreground": "#949494",
 			"fontStyle": ""
 		},
+		"unresolvedReference": {
+			"foreground": "#F7A597",
+			"fontStyle": ""
+		},
 		"*.unsafe": {
 			"foreground": "#F7A597",
 			"fontStyle": ""
