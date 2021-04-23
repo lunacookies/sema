@@ -6,7 +6,7 @@
 		"editor.background": "#000000",
 		"editor.foreground": "#CECECD",
 		"foreground": "#CECECD",
-		"rust_analyzer.inlayHints.foreground": "#484848"
+		"rust_analyzer.inlayHints.foreground": "#636363"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
@@ -127,19 +127,19 @@
 			"fontStyle": ""
 		},
 		"attribute": {
-			"foreground": "#808080",
+			"foreground": "#9E9E9E",
 			"fontStyle": ""
 		},
 		"function.attribute": {
-			"foreground": "#808080",
+			"foreground": "#9E9E9E",
 			"fontStyle": ""
 		},
 		"punctuation.attribute": {
-			"foreground": "#808080",
+			"foreground": "#9E9E9E",
 			"fontStyle": ""
 		},
 		"operator.attribute": {
-			"foreground": "#808080",
+			"foreground": "#9E9E9E",
 			"fontStyle": ""
 		},
 		"*.unsafe": {
