@@ -126,6 +126,10 @@
 			"foreground": "#DBDCF3",
 			"fontStyle": ""
 		},
+		"boolean": {
+			"foreground": "#DBDCF3",
+			"fontStyle": ""
+		},
 		"parameter": {
 			"foreground": "#DBDCF3",
 			"fontStyle": ""
