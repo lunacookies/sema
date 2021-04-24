@@ -88,6 +88,27 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::BrightFg),
     );
 
+    builder.add_workspace_rule("terminal.foreground", palette.base(BaseScale::Fg));
+    builder.add_workspace_rule("terminal.ansiBlack", palette.base(BaseScale::LightBg));
+    builder.add_workspace_rule("terminal.ansiBrightBlack", palette.base(BaseScale::DimFg));
+    builder.add_workspace_rule("terminal.ansiRed", palette.red());
+    builder.add_workspace_rule("terminal.ansiBrightRed", palette.red());
+    builder.add_workspace_rule("terminal.ansiGreen", palette.green());
+    builder.add_workspace_rule("terminal.ansiBrightGreen", palette.light_green());
+    builder.add_workspace_rule("terminal.ansiYellow", palette.yellow());
+    builder.add_workspace_rule("terminal.ansiBrightYellow", palette.yellow());
+    builder.add_workspace_rule("terminal.ansiBlue", palette.blue());
+    builder.add_workspace_rule("terminal.ansiBrightBlue", palette.light_blue());
+    builder.add_workspace_rule("terminal.ansiMagenta", palette.pink());
+    builder.add_workspace_rule("terminal.ansiBrightMagenta", palette.pink());
+    builder.add_workspace_rule("terminal.ansiCyan", palette.lavender());
+    builder.add_workspace_rule("terminal.ansiBrightCyan", palette.lavender());
+    builder.add_workspace_rule("terminal.ansiWhite", palette.base(BaseScale::Fg));
+    builder.add_workspace_rule(
+        "terminal.ansiBrightWhite",
+        palette.base(BaseScale::BrightFg),
+    );
+
     builder.add_workspace_rule("focusBorder", palette.base(BaseScale::DarkFg));
 
     builder.add_workspace_rule(
