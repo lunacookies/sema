@@ -30,14 +30,14 @@ impl Palette {
             medium_chroma: 0.09,
             high_chroma: 0.11,
             high_lightness: 0.86, // allows pushing chroma a little higher
-            ..Default::default()
+            ..Self::default()
         }
     }
 
     pub(crate) fn soft() -> Self {
         Self {
             base_lightness_range: 0.25..0.95,
-            ..Default::default()
+            ..Self::default()
         }
     }
 
