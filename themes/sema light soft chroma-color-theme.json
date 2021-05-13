@@ -209,7 +209,7 @@
 		},
 		"*.unsafe": {
 			"foreground": "#CE7162",
-			"fontStyle": ""
+			"bold": true
 		},
 		"*.mutable": {
 			"underline": true
