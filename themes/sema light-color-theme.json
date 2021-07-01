@@ -216,6 +216,10 @@
 		},
 		"*.consuming": {
 			"italic": true
+		},
+		"*.public.declaration": {
+			"foreground": "#AB7DA7",
+			"fontStyle": ""
 		}
 	},
 	"tokenColors": [
