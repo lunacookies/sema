@@ -271,10 +271,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rules(
         &[
-            Semantic("attribute"),
-            Semantic("function.attribute"),
-            Semantic("punctuation.attribute"),
-            Semantic("operator.attribute"),
+            Semantic("*.attribute"),
             Textmate("entity.name.function.decorator"),
             Textmate("storage.type.annotation"),
             Textmate("punctuation.definition.annotation"),

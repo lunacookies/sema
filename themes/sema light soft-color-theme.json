@@ -175,19 +175,7 @@
 			"foreground": "#2E2E2E",
 			"fontStyle": ""
 		},
-		"attribute": {
-			"foreground": "#757575",
-			"fontStyle": ""
-		},
-		"function.attribute": {
-			"foreground": "#757575",
-			"fontStyle": ""
-		},
-		"punctuation.attribute": {
-			"foreground": "#757575",
-			"fontStyle": ""
-		},
-		"operator.attribute": {
+		"*.attribute": {
 			"foreground": "#757575",
 			"fontStyle": ""
 		},
