@@ -224,15 +224,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rules(
         &[
-            Semantic("parameter"),
-            Textmate("variable.parameter"),
-            Textmate("entity.name.type.parameter"),
-        ],
-        palette.lavender(),
-    );
-
-    builder.add_rules(
-        &[
             Semantic("macro"),
             Textmate("entity.name.function.macro"),
             Textmate("entity.name.function.preprocessor"),

@@ -147,10 +147,6 @@
 			"foreground": "#6C6AA4",
 			"fontStyle": ""
 		},
-		"parameter": {
-			"foreground": "#6C6AA4",
-			"fontStyle": ""
-		},
 		"macro": {
 			"foreground": "#607C42",
 			"fontStyle": ""
@@ -437,20 +433,6 @@
 		},
 		{
 			"scope": "entity.name.type.result",
-			"settings": {
-				"foreground": "#6C6AA4",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "variable.parameter",
-			"settings": {
-				"foreground": "#6C6AA4",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "entity.name.type.parameter",
 			"settings": {
 				"foreground": "#6C6AA4",
 				"fontStyle": ""
