@@ -82,6 +82,16 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("tab.inactiveForeground", palette.base(BaseScale::DimFg));
     builder.add_workspace_rule("tab.activeForeground", palette.base(BaseScale::BrightFg));
 
+    builder.add_workspace_rules(
+        &["titleBar.activeBackground", "titleBar.inactiveBackground"],
+        palette.base(BaseScale::Bg),
+    );
+    builder.add_workspace_rule("titleBar.activeForeground", palette.base(BaseScale::Fg));
+    builder.add_workspace_rule(
+        "titleBar.inactiveForeground",
+        palette.base(BaseScale::DarkFg),
+    );
+
     builder.add_workspace_rule("breadcrumb.foreground", palette.base(BaseScale::DimFg));
     builder.add_workspace_rule(
         "breadcrumb.focusForeground",
