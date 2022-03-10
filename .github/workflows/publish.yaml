@@ -3,25 +3,32 @@ on:
     tags: [v*]
 
 jobs:
-  publish:
-    runs-on: ubuntu-latest
 
+  publish-openvsx:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 12
-
       - run: npm install
-
       - name: Publish to Open VSX Registry
         uses: HaaLeo/publish-vscode-extension@v0
         with:
           pat: ${{ secrets.OPEN_VSX_TOKEN }}
 
+  publish-marketplace:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm install
       - name: Publish to Visual Studio Marketplace
         uses: HaaLeo/publish-vscode-extension@v0
         with:
