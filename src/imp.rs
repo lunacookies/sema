@@ -9,7 +9,15 @@ pub(crate) fn add_rules(builder: &mut ThemeBuilder, palette: &Palette) {
 }
 
 fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
-    builder.add_workspace_rule("editor.background", palette.base(BaseScale::Bg));
+    builder.add_workspace_rules(
+        &[
+            "editor.background",
+            "editorInlayHint.background",
+            "editorInlayHint.parameterBackground",
+            "editorInlayHint.typeBackground",
+        ],
+        palette.base(BaseScale::Bg),
+    );
     builder.add_workspace_rules(
         &["editor.foreground", "foreground"],
         palette.base(BaseScale::Fg),
@@ -121,8 +129,13 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_workspace_rule("focusBorder", palette.base(BaseScale::DarkFg));
 
-    builder.add_workspace_rule(
-        "rust_analyzer.inlayHints.foreground",
+    builder.add_workspace_rules(
+        &[
+            "rust_analyzer.inlayHints.foreground",
+            "editorInlayHint.foreground",
+            "editorInlayHint.parameterForeground",
+            "editorInlayHint.typeForeground",
+        ],
         palette.base(BaseScale::DimFg),
     );
 }

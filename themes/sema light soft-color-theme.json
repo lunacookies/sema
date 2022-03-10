@@ -4,6 +4,9 @@
 	"type": "light",
 	"colors": {
 		"editor.background": "#F2F2F2",
+		"editorInlayHint.background": "#F2F2F2",
+		"editorInlayHint.parameterBackground": "#F2F2F2",
+		"editorInlayHint.typeBackground": "#F2F2F2",
 		"editor.foreground": "#474747",
 		"foreground": "#474747",
 		"editor.lineHighlightBackground": "#DCDCDC",
@@ -55,7 +58,10 @@
 		"terminal.ansiWhite": "#474747",
 		"terminal.ansiBrightWhite": "#2E2E2E",
 		"focusBorder": "#A7A7A7",
-		"rust_analyzer.inlayHints.foreground": "#757575"
+		"rust_analyzer.inlayHints.foreground": "#757575",
+		"editorInlayHint.foreground": "#757575",
+		"editorInlayHint.parameterForeground": "#757575",
+		"editorInlayHint.typeForeground": "#757575"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
