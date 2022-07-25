@@ -174,11 +174,11 @@
 			"fontStyle": ""
 		},
 		"comment": {
-			"foreground": "#2E2E2E",
+			"foreground": "#757575",
 			"italic": true
 		},
 		"comment.documentation": {
-			"foreground": "#2E2E2E",
+			"foreground": "#757575",
 			"fontStyle": ""
 		},
 		"*.attribute": {
@@ -493,28 +493,28 @@
 		{
 			"scope": "comment",
 			"settings": {
-				"foreground": "#2E2E2E",
+				"foreground": "#757575",
 				"fontStyle": "italic"
 			}
 		},
 		{
 			"scope": "comment.line.documentation",
 			"settings": {
-				"foreground": "#2E2E2E",
+				"foreground": "#757575",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "comment.block.documentation",
 			"settings": {
-				"foreground": "#2E2E2E",
+				"foreground": "#757575",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "comment.block.javadoc",
 			"settings": {
-				"foreground": "#2E2E2E",
+				"foreground": "#757575",
 				"fontStyle": ""
 			}
 		},

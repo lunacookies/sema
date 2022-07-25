@@ -270,7 +270,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rules(
         &[Semantic("comment"), Textmate("comment")],
-        (palette.base(BaseScale::BrightFg), FontStyle::Italic),
+        (palette.base(BaseScale::DimFg), FontStyle::Italic),
     );
 
     builder.add_rules(
@@ -280,7 +280,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Textmate("comment.block.documentation"),
             Textmate("comment.block.javadoc"),
         ],
-        palette.base(BaseScale::BrightFg),
+        palette.base(BaseScale::DimFg),
     );
 
     builder.add_rules(

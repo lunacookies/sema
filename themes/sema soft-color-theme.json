@@ -174,11 +174,11 @@
 			"fontStyle": ""
 		},
 		"comment": {
-			"foreground": "#EEEEEE",
+			"foreground": "#959595",
 			"italic": true
 		},
 		"comment.documentation": {
-			"foreground": "#EEEEEE",
+			"foreground": "#959595",
 			"fontStyle": ""
 		},
 		"*.attribute": {
@@ -493,28 +493,28 @@
 		{
 			"scope": "comment",
 			"settings": {
-				"foreground": "#EEEEEE",
+				"foreground": "#959595",
 				"fontStyle": "italic"
 			}
 		},
 		{
 			"scope": "comment.line.documentation",
 			"settings": {
-				"foreground": "#EEEEEE",
+				"foreground": "#959595",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "comment.block.documentation",
 			"settings": {
-				"foreground": "#EEEEEE",
+				"foreground": "#959595",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "comment.block.javadoc",
 			"settings": {
-				"foreground": "#EEEEEE",
+				"foreground": "#959595",
 				"fontStyle": ""
 			}
 		},
